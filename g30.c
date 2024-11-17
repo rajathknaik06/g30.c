@@ -21,9 +21,9 @@ int main()
     while(n!=0)
     
     {
-        remainder =n%10;
-        sum+=remainder;
-        n/=10;
+        remainder =n%10;      //The last digit of n is obtained using n % 10 and stored in remainder.
+        sum+=remainder;      //The remainder is added to sum.
+        n/=10;                //The number n is reduced by one digit by performing integer division n /= 10.
     }
     printf("%d\n",sum);
     return 0;
